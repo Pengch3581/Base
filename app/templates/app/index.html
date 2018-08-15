@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %} {% block content %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-8">
+            <h1 class="page-header">
+                test
+            </h1>
+        </div>
+        <div>
+            {% for game in game_list %}
+            <div>
+                <h2>
+                    <a>{{ game.id }}</a>
+                </h2>
+                <p><span class="glyphicon glyphicon-time"></span>{{ game.create_time }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Side Widget Well -->
+        <div class="well">
+            <h4>
+                <span class="glyphicon glyphicon-align-justify"></span> 博客介绍</h4>
+            <p>欢迎来到我的个人博客，此博客主要用于记录技术随笔，个人感想等各种杂文。由于初学编程，个中纰漏，望请指出，谢谢！</p>
+        </div>
+
+    </div>
+
+</div>
+<!-- /.row -->
+{% endblock content %}

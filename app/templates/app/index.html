@@ -1,12 +1,9 @@
-{% extends 'app/base.html' %} {% block content %}
+{% extends 'app/base.html' %} {% block title %}
+<title>Base</title>
+{% endblock title %} {% block content %}
 <div class="container">
     <div class="row">
 
-        <div class="col-md-8">
-            <h1 class="page-header">
-                test
-            </h1>
-        </div>
         <div>
             {% for game in game_list %}
             <div>

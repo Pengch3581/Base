@@ -19,6 +19,7 @@ class Snippet(models.Model):
         ordering = ('created',)
 # Create your models here.
 
+# Game table
 class Game(models.Model):
     STATUS = (
         (0, 'enable'),
@@ -27,5 +28,7 @@ class Game(models.Model):
     name = models.CharField(max_length=50)
     create_time = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=10, choices=STATUS)
+
+# 
 
 

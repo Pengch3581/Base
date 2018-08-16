@@ -1,7 +1,29 @@
 body {
-    padding-top: 70px;
+    /* padding-top: 40px; */
+}
+
+.new-nav {
+    height: 40px;
+    line-height: 40px;
+    /* min-height: 40px; */
+    background-color: red;
+}
+
+.new-main-nav {
+    /* top: 0; */
+    height: 60px;
+    line-height: 60px;
+    background-color: aquamarine;
+}
+
+.new-mume-nav {
+    height: 40px;
+    line-height: 40px;
+    background-color: bisque;
 }
 
 footer {
     margin: 50px 0;
 }
+
+.well {}
